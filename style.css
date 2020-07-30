@@ -4,28 +4,43 @@ html { box-sizing: border-box; }
 
 body {
 	font-family: sans-serif;
-	font-size: 14px;}
+	font-size: 14px;
+}
 
 /* ---------------------------------------------------- */
 
-
-.tym {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-    align-items: center;
-}
+h1 {text-align: center;}
 
 .osoba {
 	border: 1px solid black;
-	display: flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items: center;
-	width:540px;
-	height:540px;
+	text-align: center;
+	margin:10px;
+	border-radius: 10px;
 }
 
 .foto {
 	border-radius: 50%;
+	margin: 20px;
+}
+.popis { 
+	margin:10px;
+}
+
+@media (min-width: 540px) {
+    .tym {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.osoba {
+		flex-basis: 50%	;
+}
+}
+@media (min-width: 960px) {
+    .tym {
+display: flex;
+flex-direction: row;
+}
+.osoba {
+	flex-basis: calc(100% / 4 - 20px);
+}
 }
