@@ -32,7 +32,7 @@ h1 {text-align: center;}
 		flex-wrap: wrap;
 	}
 	.osoba {
-		flex-basis: 50%	;
+		width: calc(50% - 20px);
 }
 }
 @media (min-width: 960px) {
